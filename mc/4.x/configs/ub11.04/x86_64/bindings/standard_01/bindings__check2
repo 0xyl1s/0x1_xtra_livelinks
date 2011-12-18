@@ -1,0 +1,20 @@
+
+# ec1 extensions
+regex/\.([Zz][Ii][Pp])$
+        Open=%cd %p#uzip
+        View=%view{ascii} unzip -v %f
+regex/\.t([gp]?z|ar\.g?[zZ])$|\.ipk|\.gem$
+        Open=%cd %p#utar
+regex/\.(7z|7Z)$
+	Open=%cd %p#u7z
+
+
+### Default ###
+
+# Default target for anything not described above
+default/*
+        Open=(gvim %f &)
+        View=(gvim %f &)
+
+
+### EOF ###

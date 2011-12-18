@@ -1,0 +1,21 @@
+"1.0b7.2 "(created 2011/08/05 11:03:59)"
+
+loadplugins '\.(js|penta)$'
+group user
+set guioptions=bCrsB
+:set! browser.tabs.closeWindowWithLastTab=false
+set! browser.fullscreen.autohide=false
+
+"execute :delbm! to flush bookmark cache
+bma -k gen https://encrypted.google.com/search?q=%s
+bma -k gfr https://encrypted.google.com/search?hl=fr\&q=%s
+bma -k wen https://en.wikipedia.org/w/index.php?title=%s
+bma -k wfr https://fr.wikipedia.org/w/index.php?title=%s
+
+map ,y <esc>:dia addbookmark<cr>
+map <silent> ,, <esc>:!gvim ~/.ec1/pentadactyl/00config/00rc<cr>
+
+source! ~/.ec1/00mu/pentadactyl/00config/.pentadactylrc.ec1local
+map <silent> ,, <esc>:!gvim ~/.ec1/00mu/pentadactyl/00config/.pentadactylrc.ec1local<cr>
+
+" vim: set ft=javascript:
