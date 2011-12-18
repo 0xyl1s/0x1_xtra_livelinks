@@ -59,9 +59,10 @@ Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
 
 # open a terminal
 #Mod1 F1 :Exec x-terminal-emulator
-Control Shift Mod1 t :Exec urxvt
-Control Shift Mod1 b :Exec firefox
-Control Shift Mod1 g :Exec gvim
+Control Shift Mod1 t :Exec t
+Control Shift Mod1 b :Exec b
+Control Shift Mod1 e :Exec e
+Control Shift Mod1 v :Exec v
 
 # open a dialog to run programs
 #Mod1 F2 :Exec fbrun
