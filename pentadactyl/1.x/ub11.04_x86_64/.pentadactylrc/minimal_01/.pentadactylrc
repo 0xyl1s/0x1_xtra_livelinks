@@ -1,4 +1,4 @@
-"1.0b7.2 "(created 2011/08/05 11:03:59)"
+"ec1_livelinks
 
 loadplugins '\.(js|penta)$'
 group user
