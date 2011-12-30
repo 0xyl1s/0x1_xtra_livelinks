@@ -15,10 +15,9 @@ xmodmap "/home/c1pprod/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 
-source ~/.bashrc
-source ~/.profile
-source ~/.ec1/00mu/bash/00livelinks/startup_virtual/startup_virtual
-
+source $HOME/.bashrc
+e.sshfs -m
+source $HOME/.ec1/00mu/00startup/startup_virtual
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
