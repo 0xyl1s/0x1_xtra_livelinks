@@ -1,3 +1,4 @@
+!e1_xresources_local
 !xrdb -merge ~/.Xresources
 
 Xft.dpi:		100
@@ -7,12 +8,27 @@ XTerm*background:	whitesmoke
 XTerm*foreground:	darkslategrey
 XTerm*scrollBar:	true
 XTerm*saveLines:	5000
-Rxvt*geometry:		133x39+20+80
-Rxvt*font:		xft:Droid\ Sans\ Mono:style=Bold:pixelsize=14
-Rxvt*background:	whitesmoke
-Rxvt*foreground:	black
+!Rxvt related
+Rxvt*termName:		rxvt
+Rxvt*geometry:		123x43+289+85
+Rxvt*visualBell:	true
+!Rxvt*font:		xft:Droid\ Sans\ Mono:style=Bold:pixelsize=14
+Rxvt*font:		xft:Droid Sans Mono:style=Bold:pixelsize=13
+Rxvt*background:	#100606
+Rxvt*foreground:	#f2eece
+Rxvt*fadeColor:		#030101
+Rxvt*fading:		80
 Rxvt*scrollBar:		true
-Rxvt*scrollbarstyle:	xterm
+Rxvt*scrollstyle:	plain
+Rxvt*scrollColor:	#390101
+Rxvt*internalBorder:	3
 Rxvt*modifier:		alt
 Rxvt*saveLines:		5000
-!Rxvt*cursorBlink:	true
+Rxvt*cursorUnderline:	true
+Rxvt*cursorBlink:	true
+!Rxvt*cursorColor:	yellow
+!Rxvt*transparent:	true
+!Rxvt*tintColor:		orange
+!Rxvt*shading:		90
+!Rxvt*blurRadius:	50
+
