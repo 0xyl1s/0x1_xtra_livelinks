@@ -4,7 +4,7 @@ XXkb.mainwindow.appicon: yes
 XXkb.controls.two_state: no
 XXkb.controls.button_delete: no
 XXkb.app_list.wm_name.ignore: gkrellm* gimp* VLC* audacious* conky*
-XXkb.image.path: /.ec1/00mu/00sourcing/ec1_system_livelinks/ub11.04_x86_64/xxkb/images/standard_01/images
+XXkb.image.path: /.ec1/00mu/00sourcing/ec1_system_livelinks/ub11.04_x86_64/xxkb/images/variation_01
 XXkb.button.enable: yes
 XXkb.button.geometry: 13x8-70+0
 XXkb.button.image.1: img01.xpm
