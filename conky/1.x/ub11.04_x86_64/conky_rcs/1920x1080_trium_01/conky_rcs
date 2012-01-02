@@ -1,5 +1,0 @@
-conky -c ~/.ec1/00mu/00sourcing/ec1_xtra_livelinks/conky/1.x/ub11.04_x86_64/config_min/standard_01/.conkyrc_min &
-conky -c ~/.ec1/00mu/00sourcing/ec1_xtra_livelinks/conky/1.x/ub11.04_x86_64/config_time/standard_01/.conkyrc_time &
-conky -c ~/.ec1/00mu/00sourcing/ec1_xtra_livelinks/conky/1.x/ub11.04_x86_64/config_system/standard_01/.conkyrc_system &
-
-# vim: ft=sh
