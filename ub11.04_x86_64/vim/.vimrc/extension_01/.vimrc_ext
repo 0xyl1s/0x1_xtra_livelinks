@@ -23,7 +23,7 @@ map <S-F2> <ESC>:buffers<CR>
 map ,, <ESC>:!gvim ~/.ec1/00mu/vim/00config/.vimrc.ec1local<CR><ESC>
 
 if has ('gui')
-    colorscheme pima_root1                          "set colorscheme
+    colorscheme print_bw                          "set colorscheme
     set guioptions-=T				"no gvim toolbar
     set guioptions-=m				"no gvim menu
     set mousehide					"hide the mouse when typing text
