@@ -29,7 +29,6 @@ if has ('gui')
     set mousehide					"hide the mouse when typing text
     set co=135					"gvim window size
     set lines=53
-    color fruity					"setting color
     set guifont=Droid\ Sans\ Mono\ 10		"setting font
 endif
 
