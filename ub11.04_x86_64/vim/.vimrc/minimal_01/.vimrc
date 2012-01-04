@@ -1,6 +1,5 @@
 ".vimrc minimal_01
 
-"colorscheme default
 set nocompatible
 set encoding=utf-8                                      "character encoding
 set nobk                                                "no backup
