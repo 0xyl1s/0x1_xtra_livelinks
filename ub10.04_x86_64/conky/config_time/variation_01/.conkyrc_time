@@ -1,0 +1,49 @@
+double_buffer yes
+own_window yes
+own_window_type desktop
+own_window_hints undecorated,above,sticky,skip_taskbar,skip_pager          
+own_window_transparent no
+alignment tr
+gap_x 95
+gap_y 0
+use_xft yes
+on_bottom yes
+xftfont Ubuntu:size=25
+xftalpha 0.2
+update_interval 1.0
+total_run_times 0
+#minimum_size 280 50
+draw_shades yes
+draw_outline no
+draw_borders yes
+stippled_borders 1
+border_margin 0
+border_width 1
+
+default_color red
+#text_values
+color1 eeeeee
+#text_percent
+color2 aaaaaa
+#text_labels
+color3 444444
+#bar
+color4 666666
+#graph
+color5 666666
+#stippled
+color6 333333
+#test1
+color7 green
+#test2
+color8 maroon
+
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+use_spacer no
+TEXT
+${font Ubuntu:size=25}${alignc}${color1}${voffset 0}${time %H:%M:%S}${font}
+# vim: ft=conf co=130 lines=60

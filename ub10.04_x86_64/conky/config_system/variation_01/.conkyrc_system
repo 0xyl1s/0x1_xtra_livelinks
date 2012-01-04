@@ -1,0 +1,107 @@
+double_buffer yes
+update_interval 1.0
+alignment tr
+gap_x 2
+gap_y 50
+#minimum_size 280 50
+#own_window_hints undecorated,above,sticky,skip_taskbar,skip_pager          
+own_window yes
+own_window_type desktop                                                    
+own_window_hints skip_taskbar,skip_pager          
+own_window_transparent yes
+use_xft yes
+xftfont Ubuntu:size=9
+xftalpha 0.8
+total_run_times 0
+draw_shades no
+draw_outline no
+draw_borders no
+stippled_borders 1
+border_width 1
+
+default_color red
+#text_values
+color1 dddddd
+#text_percent
+color2 eeeeee
+#text_labels
+color3 bbbbbb
+#bar
+color4 eeeeee
+#graph
+color5 eeeeee
+#stippled
+color6 white
+
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+TEXT
+${alignc}εληάνοβα
+${font Ubuntu:size=13}${alignc}${color2}${time %Y-%m-%d}${font}
+${alignc}${color1}[${time %A}]${font}
+
+${nodename} ${alignr}${uptime}
+${color6}${stippled_hr}
+${color3}cpu (${acpitemp}°C) ${color2}${cpu}% ${voffset 2}${color4}${cpubar 15}
+${color5}${cpugraph cpu 5}
+${if_existing /sys/devices/system/cpu/cpu0}${color3}cpu1@${freq_g cpu1}Ghz ${color2}${cpu cpu1}%${endif} ${if_existing /sys/devices/system/cpu/cpu1}${alignr}${color2}${cpu cpu2}% ${color3}cpu2@${freq_g cpu2}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu0}${color5}${cpubar cpu1 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu1}${cpubar cpu2 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu0}${color5}${voffset 3}${cpugraph cpu1 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu1}${cpugraph cpu2 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu2}${color3}cpu3@${freq_g cpu3}Ghz ${color2}${cpu cpu3}%${endif} ${if_existing /sys/devices/system/cpu/cpu3}${alignr}${color2}${cpu cpu4}% ${color3}cpu4@${freq_g cpu4}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu2}${color5}${cpubar cpu3 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu3}${cpubar cpu4 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu2}${color5}${voffset 3}${cpugraph cpu1 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu3}${cpugraph cpu4 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu4}${color3}cpu5@${freq_g cpu5}Ghz ${color2}${cpu cpu5}%${endif} ${if_existing /sys/devices/system/cpu/cpu5}${alignr}${color2}${cpu cpu6}% ${color3}cpu6@${freq_g cpu6}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu4}${color5}${cpubar cpu5 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu5}${cpubar cpu6 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu4}${color5}${voffset 3}${cpugraph cpu5 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu5}${cpugraph cpu6 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu6}${color3}cpu7@${freq_g cpu7}Ghz ${color2}${cpu cpu7}%${endif} ${if_existing /sys/devices/system/cpu/cpu7}${alignr}${color2}${cpu cpu8}% ${color3}cpu8@${freq_g cpu8}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu6}${color5}${cpubar cpu7 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu7}${cpubar cpu8 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu6}${color5}${voffset 3}${cpugraph cpu7 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu7}${cpugraph cpu8 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu8}${color3}cpu9@${freq_g cpu9}Ghz ${color2}${cpu cpu9}%${endif} ${if_existing /sys/devices/system/cpu/cpu9}${alignr}${color2}${cpu cpu10}% ${color3}cpu10@${freq_g cpu10}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu8}${color5}${cpubar cpu9 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu9}${cpubar cpu10 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu8}${color5}${voffset 3}${cpugraph cpu9 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu9}${cpugraph cpu10 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu10}${color3}cpu11@${freq_g cpu11}Ghz ${color2}${cpu cpu11}%${endif} ${if_existing /sys/devices/system/cpu/cpu11}${alignr}${color2}${cpu cpu12}% ${color3}cpu12@${freq_g cpu12}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu10}${color5}${cpubar cpu11 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu11}${cpubar cpu12 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu10}${color5}${voffset 3}${cpugraph cpu11 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu11}${cpugraph cpu12 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu12}${color3}cpu13@${freq_g cpu13}Ghz ${color2}${cpu cpu13}%${endif} ${if_existing /sys/devices/system/cpu/cpu13}${alignr}${color2}${cpu cpu14}% ${color3}cpu14@${freq_g cpu14}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu12}${color5}${cpubar cpu13 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu13}${cpubar cpu14 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu12}${color5}${voffset 3}${cpugraph cpu13 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu13}${cpugraph cpu14 8,150}${endif}
+${if_existing /sys/devices/system/cpu/cpu14}${color3}cpu15@${freq_g cpu15}Ghz ${color2}${cpu cpu15}%${endif} ${if_existing /sys/devices/system/cpu/cpu15}${alignr}${color2}${cpu cpu16}% ${color3}cpu16@${freq_g cpu16}Ghz${endif}
+${if_existing /sys/devices/system/cpu/cpu14}${color5}${cpubar cpu15 5,150}${endif} ${if_existing /sys/devices/system/cpu/cpu15}${cpubar cpu16 5,150}${endif}
+${voffset -11}${if_existing /sys/devices/system/cpu/cpu14}${color5}${voffset 3}${cpugraph cpu15 8,150}${endif} ${if_existing /sys/devices/system/cpu/cpu15}${cpugraph cpu16 8,150}${endif}
+${top name 1}${goto 165}${top cpu 1}${alignr}${top pid 1}
+${top name 2}${goto 165}${top cpu 2}${alignr}${top pid 2}
+${top name 3}${goto 165}${top cpu 3}${alignr}${top pid 3}
+${color6}${stippled_hr}
+${color3}ram ${color1}${mem}/${memmax} - ${color2}${memperc}% ${voffset 3}${color4}${membar 14}
+${voffset -2}${color5}${memgraph 13}
+${top_mem name 1}${goto 165}${top_mem mem 1}${alignr}${top_mem pid 1}
+${top_mem name 2}${goto 165}${top_mem mem 2}${alignr}${top_mem pid 2}
+${top_mem name 3}${goto 165}${top_mem mem 3}${alignr}${top_mem pid 3}
+${color3}swap ${color1}${swap}/${swapmax} - ${color2}${swapperc}% ${color4}${swapbar}
+${voffset 8}${color3}proc. ${color1}${processes} (${running_processes}) ${color3}load ${color1}${loadavg} ${color5}${loadgraph 13}
+${color6}${stippled_hr}
+${color3}diskio ${color1}${diskio}
+${voffset -6}${color5}${diskiograph}
+${voffset -8}${color3}read ${color1}${diskio_read}${alignr}${diskio_write}${color3} write
+${voffset -6}${color5}${diskiograph_read 20,150}${alignr}${diskiograph_write 20,150}
+${color3}root${goto 70}${color1}${fs_free /}${goto 125}(${fs_used /})${goto 190}| ${fs_size /}${goto 255}${color4}${fs_bar /}
+${color3}data1${goto 70}${color1}${fs_free /data1}${goto 125}(${fs_used /data1})${goto 190}| ${fs_size /data1}${goto 255}${color4}${fs_bar /data1}
+${voffset 6}${top_io name 1}${goto 105}r:${top_io io_read 1}${goto 195}w:${top_io io_write 1}${alignr}${top_io pid 1}
+${top_io name 2}${goto 105}r:${top_io io_read 1}${goto 195}w:${top_io io_write 2}${alignr}${top_io pid 2}
+${top_io name 3}${goto 105}r:${top_io io_read 1}${goto 195}w:${top_io io_write 3}${alignr}${top_io pid 3}
+
+${color6}${stippled_hr}
+${if_existing /proc/net/route eth0}${color3}eth0 ${color1}${addr eth0}${goto 190}${color3}gw${alignr}${color1}${gw_ip eth0}
+${goto 190}${color3}dns${alignr}${color1}${nameserver}
+
+${color1}(${totalup eth0}) ${upspeed eth0}${alignr}${downspeed eth0} (${totaldown eth0})
+${color5}${upspeedgraph eth0 20,150} ${downspeedgraph eth0 20,150}${endif}
+${if_existing /proc/net/route usb0}
+${color3}usb0 ${color1}${addr usb0}${alignr}${gw_ip usb0}
+${color2}(${totalup usb0}) ${upspeed usb0}${alignr}${downspeed usb0} (${totaldown usb0})
+${voffset -6}${color5}${upspeedgraph usb0 32,150} ${downspeedgraph usb0 32,150}${endif}
+${color6}${stippled_hr}
+# vim: ft=conf co=130 lines=60

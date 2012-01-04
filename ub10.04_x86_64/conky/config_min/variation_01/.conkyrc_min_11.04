@@ -1,0 +1,42 @@
+double_buffer yes
+update_interval 1.0
+alignment bottom_left
+gap_x 635
+gap_y -16
+#minimum_size 680
+#own_window_hints undecorated,above,sticky,skip_taskbar,skip_pager          
+own_window yes
+own_window_type desktop                                                    
+own_window_hints above,skip_pager
+own_window_transparent no
+use_xft yes
+xftfont Ubuntu:size=10
+xftalpha 0.8
+total_run_times 0
+draw_shades yes
+draw_outline no
+draw_borders no
+stippled_borders 0
+border_inner_margin 0
+#border_outer_margin 5
+#border_margin 0
+border_width 0
+#draw_graph_borders no
+
+color1 aaaaaa
+color2 aaaaaa
+color3 red
+
+default_bar_size 60 9
+default_graph_size 30 40
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale no
+use_spacer right
+#pad_percents 2
+TEXT
+$alignc ${color1}${cpubar} ${diskiograph 9,60} ${membar} ${voffset -1}${font Ubuntu:size=10} ${color2}.:. ${color3}${time %H:%M:%S}${color2}${font Ubuntu:size=8}${voffset -1}  ${exec whoami}  
+
+# vim: ft=conf co=130 lines=60

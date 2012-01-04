@@ -1,0 +1,10 @@
+[begin] (ec1)
+[nop]
+    [exec] (terminal) {urxvt}
+    [exec] (editor) {gvim}
+    [exec] (browser) {firefox}
+    [nop]
+    [submenu] (00ori)
+	[include] (/etc/X11/fluxbox/fluxbox-menu)
+    [end]
+[end]
