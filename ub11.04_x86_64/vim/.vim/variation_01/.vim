@@ -1,0 +1,1 @@
+../../../../ub10.04_x86_64/vim/.vim/variation_01/.vim
