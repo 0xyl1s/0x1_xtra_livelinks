@@ -28,8 +28,8 @@ regex/\.xls$
         Open=soffice %f &
         View=soffice %f &
 regex/\.(jpg|png|jp2|bmp)$
-        Open=gwenview %f &
-        View=gwenview %f &
+        Open=geeqie %f &
+        View=geeqie %f &
 regex/\.mwb$
         Open=mysql-workbench %f &
         View=mysql-workbench %f &
