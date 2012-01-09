@@ -6,9 +6,6 @@ regex/\.ora$
 regex/\.blend$
         Open=(blender %f &)
         View=(blender %f &)
-regex/\.(xcf|psd)$
-        Open=(gimp %f &)
-        View=(gimp %f &)
 regex/\.mm$
         Open=(freemind %f &)
         View=(freemind %f &)
@@ -27,7 +24,7 @@ regex/\.(ogv|flv|webm|mjpeg|mkv|m4v|m2v|mpeg|ts|vob|VOB|MTS|mpg|mp4|MP4|wmv|mov|
 regex/\.xls$
         Open=soffice %f &
         View=soffice %f &
-regex/\.(jpg|png|jp2|bmp|CR2|cr2)$
+regex/\.(jpg|png|jp2|bmp|CR2|cr2|psd)$
         Open=geeqie %f &
         View=geeqie %f &
 regex/\.(xcf)$
