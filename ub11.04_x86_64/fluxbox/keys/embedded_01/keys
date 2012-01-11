@@ -63,6 +63,12 @@ Control Shift Mod1 t :Exec t
 Control Shift Mod1 b :Exec b
 Control Shift Mod1 e :Exec e
 Control Shift Mod1 v :Exec v
+Control Shift Mod1 3 :Exec 3
+Control Shift Mod1 a :Exec a
+Control Shift Mod1 s :Exec s
+Control Shift Mod1 p :Exec p
+Control Shift Mod1 g :Exec g
+Control Shift Mod1 c :Exec c
 
 # open a dialog to run programs
 #Mod1 F2 :Exec fbrun
