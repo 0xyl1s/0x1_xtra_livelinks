@@ -16,7 +16,7 @@ imap jj <esc>
 map ,t_ <ESC>o_<ESC>vy79po<CR><CR><CR><CR>_<ESC>vy79po<CR><CR><ESC>5k
 map <F1> <ESC>:NERDTreeToggle<CR>
 map <F2> <ESC>:TMiniBufExplorer<CR>
-map <F5> <ESC>:!silent u<CR>
+map <F5> <ESC>:!silent t<CR>
 map <F6> <ESC>:w<CR>:!ruby %<CR>
 map <S-F1> <ESC>:MRU<CR>
 map <S-F2> <ESC>:buffers<CR>
