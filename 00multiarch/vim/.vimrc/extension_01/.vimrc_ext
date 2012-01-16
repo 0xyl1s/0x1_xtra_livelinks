@@ -1,0 +1,101 @@
+
+".vimrc_extension_01
+
+set statusline=%m%r%h\ g:\%{GitBranchInfoString()}\ \|\ %p%%\ %l/%L\ %c\ \|\ %n\ %y\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}\ %<%F
+set laststatus=2
+set showcmd                                             "show commamd line
+set highlight=sr                                        "show status line in inverse video
+set scrolloff=2                                         "always keep the indicated number of line above or below the cursor
+set showtabline=2                                       "always display the tab line
+set tabpagemax=15                                       "maximum number of tabs
+set cursorline                                          "highlight current line
+set history=5000                                        "set history depth
+set smartcase                                           "override ignorecase option when search string use caps
+
+imap jj <esc>
+map ,t_ <ESC>o_<ESC>vy79po<CR><CR><CR><CR>_<ESC>vy79po<CR><CR><ESC>5k
+map <F1> <ESC>:NERDTreeToggle<CR>
+map <F2> <ESC>:TMiniBufExplorer<CR>
+map <F3> <ESC>:r !e.random_string<CR>
+map <F5> <ESC>:silent !t<CR>
+map <F6> <ESC>:w<CR>:!ruby %<CR>
+map <F7> <ESC>:silent !gitk % &<CR>
+map <S-F1> <ESC>:MRU<CR>
+map <S-F2> <ESC>:buffers<CR>
+map ,, <ESC>:!gvim ~/.ec1/00mu/vim/00config/.vimrc.ec1local<CR><ESC>
+
+if has ('gui')
+    colorscheme print_bw                          "set colorscheme
+    set guioptions-=T				"no gvim toolbar
+    set guioptions-=m				"no gvim menu
+    set mousehide					"hide the mouse when typing text
+    set co=135					"gvim window size
+    set lines=53
+    set guifont=Droid\ Sans\ Mono\ 10		"setting font
+endif
+
+"MRU
+let MRU_Max_Entries=200
+let MRU_Window_Height=20
+
+if filereadable(expand("~/_/.ec1share"))
+    map ,ho <ESC>:sav! ~/_/00vim/00x<CR><ESC>:q<CR>
+    map ,hi <ESC>:r! cat ~/_/00vim/00x<CR><ESC>
+    map ,lo <ESC>:sav! ~/_/00firefox/00x<CR><ESC>:q<CR>
+    map ,li <ESC>:r! cat ~/_/00firefox/00x<CR><ESC>
+endif
+
+if has("autocmd")
+  augroup ruby
+    autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+"    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
+  augroup html
+    autocmd FileType html,xhtml set ai sw=4 noet
+"    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
+  augroup END
+endif
+
+"silent source! Session.vim
+
+"shortcuts
+inoremap <c-j> <Esc>/φ<CR><Esc>cfφ
+inoremap k( ()φφ<Esc>F)i
+inoremap k[ []φφ<Esc>F]i
+inoremap k{ {}φφ<Esc>F}i
+inoremap k< <>φφ<Esc>F>i
+inoremap k" ""φφ<Esc>F"i
+inoremap k' ''φφ<Esc>F'i
+inoremap k` ``φφ<Esc>F`i
+inoremap k\| \|\|φφ<Esc>F\|i
+inoremap k# #{}φφ<Esc>F}i
+inoremap k$ ${}φφ<Esc>F}i
+imap <S-Tab> <esc>/φ[^φ]*φ/<cr>li
+imap <C-F10> <esc>xdfφi
+map ,s <esc>:s!!!g<left><left>
+imap <m-h> <esc>i
+imap <m-l> <esc><right>a
+imap <m-j> <esc>gja
+imap <m-k> <esc>gka
+map ;ml <esc>mrGo<cr><cr># vim: <esc>a
+map ;sp <esc>:set spell spelllang=fr\|:set spell<cr>
+vmap ,c "+ygv
+vmap ,x "+d
+map ,v "+p
+map ,nh :nohl<cr>
+map ,dt k:r! e_time_datehour<cr>2j
+
+"nerdtree
+"let NERDTreeChDirMode=2
+"let NERDTreeQuitOnOpen=1
+"let NERDTreeShowBookmarks=1
+"let NERDTreeShowHidden=1
+"let NERDTreeWinSize=50
+"
+
+"unknown
+let Tlist_Close_On_Select=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_SingleClick=1
+let Tlist_WinWidth=50
+
+" vim: ft=vim

@@ -1,5 +1,0 @@
-
-export TERM='rxvt'
-export EDITOR="/usr/bin/vim"
-
-# vim: ft=sh
