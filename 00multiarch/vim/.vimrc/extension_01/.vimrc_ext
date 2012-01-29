@@ -16,13 +16,13 @@ imap jj <esc>
 map ,t_ <ESC>o_<ESC>vy79po<CR><CR><CR><CR>_<ESC>vy79po<CR><CR><ESC>5k
 map <F1> <ESC>:NERDTreeToggle<CR>
 map <F2> <ESC>:TMiniBufExplorer<CR>
-map <F3> <ESC>:r !e.random_string<CR>
+map <F3> <ESC>:r !x.random_string<CR>
 map <F5> <ESC>:silent !t<CR>
 map <F6> <ESC>:w<CR>:!ruby %<CR>
 map <F7> <ESC>:silent !gitk % &<CR>
 map <S-F1> <ESC>:MRU<CR>
 map <S-F2> <ESC>:buffers<CR>
-map ,, <ESC>:!gvim ~/.ec1/00mu/vim/00config/.vimrc.ec1local<CR><ESC>
+map ,, <ESC>:!gvim ~/.0x1/00mu/vim/00config/.vimrc.0x1local<CR><ESC>
 
 if has ('gui')
     colorscheme print_bw                          "set colorscheme
@@ -38,7 +38,7 @@ endif
 let MRU_Max_Entries=200
 let MRU_Window_Height=20
 
-if filereadable(expand("~/_/.ec1share"))
+if filereadable(expand("~/_/.0x1share"))
     map ,ho <ESC>:sav! ~/_/00vim/00x<CR><ESC>:q<CR>
     map ,hi <ESC>:r! cat ~/_/00vim/00x<CR><ESC>
     map ,lo <ESC>:sav! ~/_/00firefox/00x<CR><ESC>:q<CR>

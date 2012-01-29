@@ -20,5 +20,5 @@ set foldclose=all
 set autochdir
 
 
-source ~/.ec1/00mu/vim/00config/.vimrc.ec1local
+source ~/.0x1/00mu/vim/00config/.vimrc.0x1local
 
