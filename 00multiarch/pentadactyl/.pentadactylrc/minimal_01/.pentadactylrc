@@ -1,4 +1,4 @@
-"ec1_livelinks
+"0x1_livelinks
 
 loadplugins '\.(js|penta)$'
 group user
@@ -13,9 +13,9 @@ bma -k wen https://en.wikipedia.org/w/index.php?title=%s
 bma -k wfr https://fr.wikipedia.org/w/index.php?title=%s
 
 map ,y <esc>:dia addbookmark<cr>
-map <silent> ,, <esc>:!gvim ~/.ec1/pentadactyl/00config/00rc<cr>
+map <silent> ,, <esc>:!gvim ~/.0x1/pentadactyl/00config/00rc<cr>
 
-source! ~/.ec1/00mu/pentadactyl/00config/.pentadactylrc.ec1local
-map <silent> ,, <esc>:!gvim ~/.ec1/00mu/pentadactyl/00config/.pentadactylrc.ec1local<cr>
+source! ~/.0x1/00mu/pentadactyl/00config/.pentadactylrc.0x1local
+map <silent> ,, <esc>:!gvim ~/.0x1/00mu/pentadactyl/00config/.pentadactylrc.0x1local<cr>
 
 " vim: set ft=javascript:
