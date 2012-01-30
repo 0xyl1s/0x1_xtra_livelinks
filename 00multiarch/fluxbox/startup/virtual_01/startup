@@ -5,7 +5,7 @@
 # Lines starting with a '#' are ignored.
 
 # Change your keymap:
-xmodmap "/home/c1pprod/.Xmodmap"
+#xmodmap "/home/c1pprod/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -16,8 +16,8 @@ xmodmap "/home/c1pprod/.Xmodmap"
 # idesk &
 
 source $HOME/.bashrc
-e.sshfs -m
-source $HOME/.ec1/00mu/00startup/startup_virtual
+x.sshfs -m
+source $HOME/.0x1/00mu/00startup/startup_virtual
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.

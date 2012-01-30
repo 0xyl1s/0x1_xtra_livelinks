@@ -18,9 +18,9 @@ xmodmap "/home/h1pprod/.Xmodmap"
 source $HOME/.bashrc
 
 e.sshfs -m
-urxvt -geometry 139x39+21+471 -T 'e-launch' -e "e-launch" &
+urxvt -geometry 139x39+21+471 -T 'x-launch' -e "x-launch" &
 
-source $HOME/.ec1/00mu/00startup/startup_virtual
+source $HOME/.0x1/00mu/00startup/startup_virtual
 
 
 # And last but not least we start fluxbox.
