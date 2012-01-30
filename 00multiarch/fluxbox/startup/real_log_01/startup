@@ -17,7 +17,7 @@ xmodmap "/home/h1pprod/.Xmodmap"
 
 source $HOME/.bashrc
 
-e.sshfs -m
+x.sshfs -m
 urxvt -geometry 139x39+21+471 -T 'x-launch' -e "x-launch" &
 
 source $HOME/.0x1/00mu/00startup/startup_virtual
