@@ -49,6 +49,8 @@ if has("autocmd")
   augroup ruby
     autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
+  augroup python
+    autocmd FileType python set tabstop=8 expandtab softtabstop=4 shiftwidth=4 textwidth=79 autoindent
   augroup html
     autocmd FileType html,xhtml set ai sw=4 noet
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
