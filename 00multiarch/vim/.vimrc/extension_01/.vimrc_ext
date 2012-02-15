@@ -47,10 +47,10 @@ endif
 
 if has("autocmd")
   augroup ruby
-    autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+    autocmd FileType ruby,eruby,yaml set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=80
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
   augroup python
-    autocmd FileType python set tabstop=8 expandtab softtabstop=4 shiftwidth=4 textwidth=79 autoindent
+    autocmd FileType python set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=80
   augroup html
     autocmd FileType html,xhtml set ai sw=4 noet
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
