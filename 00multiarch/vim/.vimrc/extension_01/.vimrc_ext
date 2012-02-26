@@ -1,4 +1,3 @@
-
 ".vimrc_extension_01
 
 set statusline=%m%r%h\ g:\%{GitBranchInfoString()}\ \|\ %p%%\ %l/%L\ %c\ \|\ %n\ %y\ %{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}\ %<%F
@@ -46,16 +45,22 @@ if filereadable(expand("~/_/.0x1share"))
 endif
 
 if has("autocmd")
+  augroup sh
+    autocmd FileType sh set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=80
+  augroup END
   augroup ruby
     autocmd FileType ruby,eruby,yaml set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=80
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
+  augroup END
   augroup python
     autocmd FileType python set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=80
+  augroup END
   augroup html
-    autocmd FileType html,xhtml set ai sw=4 noet
-"    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
+    autocmd FileType html,xhtml set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=80
   augroup END
 endif
+
+iab 0dt <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
 "silent source! Session.vim
 
