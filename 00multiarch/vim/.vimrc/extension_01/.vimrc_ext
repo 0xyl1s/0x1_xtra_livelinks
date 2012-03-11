@@ -38,8 +38,8 @@ let MRU_Max_Entries=200
 let MRU_Window_Height=20
 
 if filereadable(expand("~/_/.0x1share"))
-    map ,ho <ESC>:sav! ~/_/00vim/00x<CR><ESC>:q<CR>
-    map ,hi <ESC>:r! cat ~/_/00vim/00x<CR><ESC>
+    map ,ho <ESC>:sav! ~/_/00editor/00x<CR><ESC>:q<CR>
+    map ,hi <ESC>:r! cat ~/_/00editor//00x<CR><ESC>
     map ,lo <ESC>:sav! ~/_/00browser/00x<CR><ESC>:q<CR>
     map ,li <ESC>:r! cat ~/_/00browser/00x<CR><ESC>
 endif
