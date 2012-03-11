@@ -22,6 +22,7 @@ map <F7> <ESC>:silent !gitk % &<CR>
 map <S-F1> <ESC>:MRU<CR>
 map <S-F2> <ESC>:buffers<CR>
 map ,, <ESC>:!gvim ~/.0x1/00mu/vim/00config/.vimrc.0x1local<CR><ESC>
+vmap // y/<C-R>"<CR>
 
 if has ('gui')
     colorscheme print_bw                          "set colorscheme
