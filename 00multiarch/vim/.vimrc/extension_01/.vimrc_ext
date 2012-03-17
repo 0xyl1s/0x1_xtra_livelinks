@@ -79,7 +79,7 @@ inoremap k# #{}φφ<Esc>F}i
 inoremap k$ ${}φφ<Esc>F}i
 imap <S-Tab> <esc>/φ[^φ]*φ/<cr>li
 imap <C-F10> <esc>xdfφi
-map ,s <esc>:%s:::g<left><left>
+map ,s <esc>:%s:::g<left><left><left>
 imap <m-h> <esc>i
 imap <m-l> <esc><right>a
 imap <m-j> <esc>gja
