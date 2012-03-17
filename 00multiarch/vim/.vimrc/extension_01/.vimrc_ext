@@ -12,7 +12,7 @@ set history=5000                                        "set history depth
 set smartcase                                           "override ignorecase option when search string use caps
 
 imap jj <esc>
-map ,t_ <ESC>o_<ESC>vy79po<CR><CR><CR><CR>_<ESC>vy79po<CR><CR><ESC>5k
+map ,_ <ESC>o_<ESC>vy78po<CR><CR><CR><CR>_<ESC>vy78po<CR><CR><ESC>5k
 map <F1> <ESC>:NERDTreeToggle<CR>
 map <F2> <ESC>:TMiniBufExplorer<CR>
 map <F3> <ESC>:r !x.random_string<CR>
