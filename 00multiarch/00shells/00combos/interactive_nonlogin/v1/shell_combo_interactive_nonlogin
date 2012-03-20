@@ -1,5 +1,5 @@
 
-export TERM='rxvt'
+export TERM='rxvt-256color'
 export EDITOR="/usr/bin/vim"
 
 # vim: ft=sh
