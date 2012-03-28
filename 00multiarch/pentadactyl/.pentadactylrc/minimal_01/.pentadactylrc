@@ -8,6 +8,7 @@ set! browser.fullscreen.autohide=false
 
 "execute :delbm! to flush bookmark cache
 bma -k den https://duckduckgo.com/?q=%s
+bma -k dfr https://www.duckduckgo.com/?q=%s&kl=fr-fr
 bma -k wen https://en.wikipedia.org/w/index.php?title=%s
 bma -k wfr https://fr.wikipedia.org/w/index.php?title=%s
 bma -k gen https://encrypted.google.com/search?q=%s
