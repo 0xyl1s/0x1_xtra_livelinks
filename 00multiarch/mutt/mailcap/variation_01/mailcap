@@ -1,0 +1,4 @@
+
+text/html; firefox -remote 'openURL(%s)'; copiousoutput;
+
+image/*; geeqie %s
