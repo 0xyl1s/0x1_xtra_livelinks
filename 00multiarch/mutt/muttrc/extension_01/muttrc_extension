@@ -23,7 +23,7 @@ bind browser G check-new
 macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash Message"
 
   ignore *
-unignore from: date subject to cc
+unignore subject date from to cc
 hdr_order Date From To Cc
 
 unset edit_headers                                                      # display the headers when I'm editing a message
