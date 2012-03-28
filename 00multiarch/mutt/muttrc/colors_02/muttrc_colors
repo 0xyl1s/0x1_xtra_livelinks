@@ -1,0 +1,23 @@
+
+#color  [object]      [foreground]   [background]
+color   normal        color251       color237
+color   indicator     color34        white
+color   status        color253       color65
+color   hdrdefault    color22        black
+color   quoted        blue           black
+color   signature     blue           black
+color   attachment    red            black
+color   message       brightred      black
+color   error         brightred      black
+color   tree          white          black
+color   markers       red            black
+color   search        white          black
+color   tilde         color45        black
+color   index         color214       color233        "~N|~O"
+color   index         color226       color162        "~T"
+color   index         blue           black           "~F"
+color   index         magenta        black           "~D"
+color   body          color161       default         "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+color   body          brightblue     default         "(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+"
+
+# vim: ft=muttrc expandtab colorcolumn=38

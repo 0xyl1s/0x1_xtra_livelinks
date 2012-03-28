@@ -1,0 +1,60 @@
+# checking variables value with :set ?variable2check
+  set mbox_type                 =   "maildir"
+  set send_charset              =   "utf-8"
+  set editor                    =   "gvim -f +\"silent ?^$\" +\"let @/=''\" +'set syntax=mail ft=mail colorcolumn=79'"
+
+  set simple_search             =   "~f %s | ~C %s | ~s %s"             # make default search pattern to search in To, Cc and Subject
+
+
+  set ssl_starttls
+  set ssl_force_tls
+  set imap_keepalive            =   300
+unset imap_passive
+  set ssl_use_sslv3
+  set ssl_use_tlsv1
+  set mail_check                =   600
+  set timeout                   =   30                                  # idle time before scanning
+  set imap_check_subscribed                                             # Automatically poll subscribed mailboxes for new mail
+  set net_inc                   =   5                                   # Display download progress every 5K
+
+bind index G imap-fetch-mail
+bind browser G check-new
+
+macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash Message"
+
+unset edit_headers                                                      # display the headers when I'm editing a message
+unset autoedit                                                          # autoedit allow to launch directly the editor when edit_headers is also set
+  set mime_forward
+  set mime_forward_rest
+
+unset help                                                              # hide help on first line of display
+  set sort                      =   threads
+  set sort_aux                  =   reverse-date
+  set sort_browser              =   reverse-date
+
+  set delete                                                            # don't ask me to delete messages - just do it!
+  set markers                                                           # put '+' at the beginning of wrapped lines
+  set date_format               =   "%a %F_%H:%M:%S"
+  #set folder_format            =   "%2C %t %N %8s %d %f"
+  set folder_format             =   "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f"
+  set pager_index_lines         =   24
+  set pager_context             =   3
+  set index_format              =   " %-60.60s | %D | %-25.25F %4C %Z (%?l?%4l&%4c?)"
+
+  set indent_str                =   "> "
+
+  set   pager_stop                                                      # don't go to next message at end of message
+
+  set sort_alias                =   alias
+  set reverse_alias                                                     # show names from alias file in index
+source $alias_file
+
+  set beep                                                              # beep on error
+  set beep_new                                                          # beep on new message
+  set wait_key                                                          # don't show "Press any key to continue"
+  set tilde                                                             # show tildes like in vim
+  set mark_old
+  set mailcap_path 	= ~/.mutt/mailcap
+#auto_view text/html
+
+# vim: ft=muttrc expandtab colorcolumn=33

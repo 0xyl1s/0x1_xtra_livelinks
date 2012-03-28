@@ -1,0 +1,19 @@
+
+color normal color251 color237
+color indicator color160 white
+color index color214 color233 "~N|~O"
+color status color253 color124
+color hdrdefault color202 black
+color quoted blue black
+color signature blue black
+color attachment red black
+color message brightred black
+color error brightred black
+color tree white black
+color markers red black
+color search white black
+color tilde brightmagenta black
+color index blue black ~F
+color index magenta black ~D
+
+# vim: ft=muttrc expandtab colorcolumn=33
