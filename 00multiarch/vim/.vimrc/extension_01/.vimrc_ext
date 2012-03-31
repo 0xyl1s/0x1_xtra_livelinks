@@ -28,7 +28,6 @@ map ,co <ESC>:!gvim ~/.0x1/00mu/vim/00config/.vimrc.0x1local<CR><ESC>
 vmap // y/<C-R>"<CR>
 
 if has ('gui')
-    colorscheme print_bw                                "set colorscheme
     set guioptions-=T                                   "no gvim toolbar
     set guioptions-=m                                   "no gvim menu
     set mousehide                                       "hide the mouse when typing text

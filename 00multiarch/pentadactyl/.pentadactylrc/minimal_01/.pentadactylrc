@@ -3,8 +3,8 @@
 loadplugins '\.(js|penta)$'
 group user
 set guioptions=bCrsB
-:set! browser.tabs.closeWindowWithLastTab=false
-set! browser.fullscreen.autohide=false
+"set! browser.tabs.closeWindowWithLastTab=false
+"set! browser.fullscreen.autohide=false
 
 "execute :delbm! to flush bookmark cache
 bma -k den https://duckduckgo.com/?q=%s
