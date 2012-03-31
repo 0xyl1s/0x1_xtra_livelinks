@@ -27,6 +27,8 @@ map <S-F2> <ESC>:buffers<CR>
 map ,co <ESC>:!gvim ~/.0x1/00mu/vim/00config/.vimrc.0x1local<CR><ESC>
 vmap // y/<C-R>"<CR>
 
+colorscheme morning                                     "set colorscheme
+
 if has ('gui')
     set guioptions-=T                                   "no gvim toolbar
     set guioptions-=m                                   "no gvim menu
