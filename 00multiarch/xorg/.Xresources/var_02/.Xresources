@@ -1,0 +1,23 @@
+!xrdb -merge ~/.Xresources
+
+Xft.dpi:                100
+XTerm*scrollBar:        true
+XTerm*saveLines:        10000
+urxvt*termName:         rxvt-256color
+Rxvt*termName:          rxvt
+URxvt*depth:            32
+Rxvt*geometry:          109x32+1020+504
+Rxvt*visualBell:        true
+Rxvt*font:              xft:Droid Sans Mono:style=Bold:pixelsize=13
+Rxvt*background:        #000000
+Rxvt*foreground:        #dddddd
+Rxvt*fadeColor:         #222222
+Rxvt*fading:            13
+Rxvt*scrollstyle:       plain
+Rxvt*internalBorder:    3
+Rxvt*modifier:          alt
+Rxvt*saveLines:         10000
+Rxvt*cursorUnderline:   true
+Rxvt*cursorBlink:       true
+
+! vim: ft=xdefaults expandtab
