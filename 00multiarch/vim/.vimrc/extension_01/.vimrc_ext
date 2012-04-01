@@ -34,7 +34,7 @@ if has ('gui_running')
     set guioptions-=m                                   "no gvim menu
     set mousehide                                       "hide the mouse when typing text
     set co=93                                           "gvim window size
-    set lines=53
+    set lines=56
     set guifont=Droid\ Sans\ Mono\ 10                   "setting font
 endif
 
