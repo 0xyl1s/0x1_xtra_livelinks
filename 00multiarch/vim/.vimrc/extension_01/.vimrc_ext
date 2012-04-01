@@ -33,7 +33,7 @@ if has ('gui_running')
     set guioptions-=T                                   "no gvim toolbar
     set guioptions-=m                                   "no gvim menu
     set mousehide                                       "hide the mouse when typing text
-    set co=135                                          "gvim window size
+    set co=93                                           "gvim window size
     set lines=53
     set guifont=Droid\ Sans\ Mono\ 10                   "setting font
 endif
@@ -51,17 +51,17 @@ endif
 
 if has("autocmd")
   augroup sh
-    autocmd FileType sh set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=80
+    autocmd FileType sh set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=79
   augroup END
   augroup ruby
-    autocmd FileType ruby,eruby,yaml set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=80
+    autocmd FileType ruby,eruby,yaml set autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 colorcolumn=79
 "    au BufReadPre,FileReadPre set kp=ri sw=2 ts=2 expandtab
   augroup END
   augroup python
-    autocmd FileType python set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=80
+    autocmd FileType python set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=79
   augroup END
   augroup html
-    autocmd FileType html,xhtml set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=80
+    autocmd FileType html,xhtml set autoindent expandtab tabstop=8 softtabstop=4 shiftwidth=4 colorcolumn=79
   augroup END
 endif
 
