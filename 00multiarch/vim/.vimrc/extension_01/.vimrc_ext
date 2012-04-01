@@ -39,7 +39,7 @@ if has ('gui_running')
 endif
 
 "MRU
-let MRU_Max_Entries=200
+let MRU_Max_Entries=1000
 let MRU_Window_Height=20
 
 if filereadable(expand("~/_/.0x1share"))
