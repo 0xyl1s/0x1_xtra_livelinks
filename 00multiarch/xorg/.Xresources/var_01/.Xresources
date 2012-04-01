@@ -1,34 +1,23 @@
-!e1_xresources_local
 !xrdb -merge ~/.Xresources
 
-Xft.dpi:		100
-xterm*geometry:		150x45+10+80
-xterm*font:		-schumacher-clean-bold-r-normal--15-150-75-75-c-90-iso646.1991-irv
-XTerm*background:	whitesmoke
-XTerm*foreground:	darkslategrey
-XTerm*scrollBar:	true
-XTerm*saveLines:	5000
-!Rxvt related
-Rxvt*termName:		rxvt
-Rxvt*geometry:		123x43+289+85
-Rxvt*visualBell:	true
-!Rxvt*font:		xft:Droid\ Sans\ Mono:style=Bold:pixelsize=14
-Rxvt*font:		xft:Droid Sans Mono:style=Bold:pixelsize=13
-Rxvt*background:	#100606
-Rxvt*foreground:	#f2eece
-Rxvt*fadeColor:		#030101
-Rxvt*fading:		80
-Rxvt*scrollBar:		true
-Rxvt*scrollstyle:	plain
-Rxvt*scrollColor:	#390101
-Rxvt*internalBorder:	3
-Rxvt*modifier:		alt
-Rxvt*saveLines:		5000
-Rxvt*cursorUnderline:	true
-Rxvt*cursorBlink:	true
-!Rxvt*cursorColor:	yellow
-!Rxvt*transparent:	true
-!Rxvt*tintColor:		orange
-!Rxvt*shading:		90
-!Rxvt*blurRadius:	50
+Xft.dpi:                100
+XTerm*scrollBar:        true
+XTerm*saveLines:        10000
+urxvt*termName:         rxvt-256color
+Rxvt*termName:          rxvt
+URxvt*depth:            32
+Rxvt*geometry:          109x32+1026+622
+Rxvt*visualBell:        true
+Rxvt*font:              xft:Droid Sans Mono:style=Bold:pixelsize=13
+Rxvt*background:        #000000
+Rxvt*foreground:        #dddddd
+Rxvt*fadeColor:         #222222
+Rxvt*fading:            13
+Rxvt*scrollstyle:       plain
+Rxvt*internalBorder:    3
+Rxvt*modifier:          alt
+Rxvt*saveLines:         10000
+Rxvt*cursorUnderline:   true
+Rxvt*cursorBlink:       true
 
+! vim: ft=xdefaults expandtab
