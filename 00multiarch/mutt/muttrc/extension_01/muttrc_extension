@@ -43,7 +43,7 @@ unset help                                                              # hide h
   set folder_format             =   "%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f"
   set pager_index_lines         =   24
   set pager_context             =   3
-  set index_format              =   " %-60.60s | %D | %-25.25F %4C %Z (%?l?%4l&%4c?)"
+  set index_format              =   " %-60.60s|%X| %D | %-25.25F %4C %Z (%?l?%4l&%4c?)"
 
   set indent_str                =   "> "
 
