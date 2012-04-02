@@ -26,7 +26,7 @@ macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash Message
 unignore subject date from to cc
 hdr_order Subject Date From To Cc
 
-unset edit_headers                                                      # display the headers when I'm editing a message
+  set edit_headers                                                      # display the headers when I'm editing a message
 unset autoedit                                                          # autoedit allow to launch directly the editor when edit_headers is also set
   set mime_forward
   set mime_forward_rest
