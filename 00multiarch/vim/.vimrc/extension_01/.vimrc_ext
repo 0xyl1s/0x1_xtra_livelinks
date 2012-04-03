@@ -91,7 +91,7 @@ imap <m-k> <esc>gka
 map ;ml <esc>mrGo<cr><cr># vim: <esc>a
 map ;sp <esc>:set spell spelllang=fr\|:set spell<cr>
 vmap ,c "+ygv
-nmap ,cs :%s///gn
+nmap ,cs :%s///gn<cr>
 vmap ,x "+d
 map ,p "*p
 map ,v "+p
