@@ -3,8 +3,8 @@
 loadplugins '\.(js|penta)$'
 group user
 set guioptions=bCrsB
-set! browser.tabs.closeWindowWithLastTab=true
-set! browser.fullscreen.autohide=true
+"set! browser.tabs.closeWindowWithLastTab=true
+"set! browser.fullscreen.autohide=true
 
 "execute :delbm! to flush bookmark cache
 bma -k den https://duckduckgo.com/?q=%s
@@ -17,9 +17,8 @@ bma -k gfr https://encrypted.google.com/search?hl=fr\&q=%s
 set defsearch=den
 
 map ,y <esc>:dia addbookmark<cr>
-map <silent> ,, <esc>:!gvim ~/.0x1/pentadactyl/00config/00rc<cr>
 
 source! ~/.0x1/00mu/pentadactyl/00config/.pentadactylrc.0x1local
-map <silent> ,, <esc>:!gvim ~/.0x1/00mu/pentadactyl/00config/.pentadactylrc.0x1local<cr>
+map <silent> ,co <esc>:!gvim ~/.0x1/00mu/pentadactyl/00config/.pentadactylrc.0x1local<cr>
 
 " vim: set ft=javascript:
