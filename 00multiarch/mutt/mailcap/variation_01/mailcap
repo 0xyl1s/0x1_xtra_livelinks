@@ -2,5 +2,6 @@
 text/html; firefox -remote 'openURL(%s)'; copiousoutput;
 
 image/*; feh -F %s
+application/pdf; evince %s
 
 
