@@ -24,7 +24,7 @@ map <F6> <ESC>:w<CR>:!ruby %<CR>
 map <F7> <ESC>:silent !gitk % &<CR>
 map <S-F1> <ESC>:MRU<CR>
 map <S-F2> <ESC>:buffers<CR>
-map ,co <ESC>:!gvim ~/.0x1/00mu/vim/00config/.vimrc.0x1local<CR><ESC>
+map ,co <ESC>:!gvim ~/.vimrc<CR><ESC>
 map ,cl <ESC>:let @/=''<CR>
 vmap // y/<C-R>"<CR>
 
