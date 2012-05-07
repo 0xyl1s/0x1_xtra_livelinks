@@ -213,3 +213,22 @@ colorscheme_overlay = None
 #
 ## Overwrite the old one
 #ranger.core.actions.Actions._get_macros = get_macros_MOD
+
+
+# 0x1 config
+#autosave_bookmarks = True
+collapse_preview = False
+colorscheme = 'jungle'
+#display_size_in_status_bar = False
+max_history_size = 200
+max_console_history_size = 500
+mouse_enabled = False
+#padding_right = True
+#save_console_history = True
+#scroll_offset = 8
+#show_cursor = False
+show_hidden = True
+#sort_case_insensitive = True
+#sort_directories_first = True
+unicode_ellipsis = True
+#xterm_alt_key = False
