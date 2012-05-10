@@ -183,7 +183,7 @@ class CustomApplications(Applications):
 			if exe_name in get_executables():
 				return tuple(parts) + tuple(c)
 
-		return self.either(c, 'vim', 'emacs', 'nano')
+		return self.either(c, 'gvim', 'emacs', 'nano')
 
 	def app_edit_or_run(self, c):
 		if c.mode is 1:
