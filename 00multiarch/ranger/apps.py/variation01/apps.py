@@ -133,12 +133,12 @@ class CustomApplications(Applications):
 			if f.extension in ('swc', 'smc', 'sfc'):
 				return self.either(c, 'zsnes')
 			if f.extension == 'doc':
-				return self.either(c, 'abiword', 'libreoffice',
-						'soffice', 'ooffice')
+				return self.either(c, 'libreoffice',
+						'soffice', 'abiword', 'ooffice')
 			if f.extension in ('odt', 'ods', 'odp', 'odf', 'odg', 'sxc',
 					'stc', 'xls', 'xlsx', 'xlt', 'xlw', 'gnm', 'gnumeric'):
-				return self.either(c, 'gnumeric', 'kspread',
-						'libreoffice', 'soffice', 'ooffice')
+				return self.either(c, 'libreoffice', 'soffice',
+                                        'ooffice', 'gnumeric', 'kspread')
 
 		if f.mimetype is not None:
 			if INTERPRETED_LANGUAGES.match(f.mimetype):
