@@ -12,13 +12,15 @@
 unset imap_passive
   set ssl_use_sslv3
   set ssl_use_tlsv1
-  set mail_check                =   600
+  set mail_check                =   60
   set timeout                   =   30                                  # idle time before scanning
   set imap_check_subscribed                                             # Automatically poll subscribed mailboxes for new mail
   set net_inc                   =   5                                   # Display download progress every 5K
 
-bind index G imap-fetch-mail
-bind browser G check-new
+#bind index G imap-fetch-mail
+#bind browser G check-new
+bind index gg       first-entry
+bind index G        last-entry
 
 macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash Message"
 
@@ -53,6 +55,8 @@ unset help                                                              # hide h
   set reverse_alias                                                     # show names from alias file in index
 source $alias_file
 
+unset quit                                                              # ask for confirmation when quitting mutt
+unset confirmappend                                                     # do not ask for confirmation when appending
   set beep                                                              # beep on error
   set beep_new                                                          # beep on new message
   set wait_key                                                          # don't show "Press any key to continue"
