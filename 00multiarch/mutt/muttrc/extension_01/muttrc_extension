@@ -6,6 +6,11 @@
   set simple_search             =   "~f %s | ~C %s | ~s %s"             # make default search pattern to search in To, Cc and Subject
 
 
+  #set reverse_name                                                     # reply as whomever it was to
+  #set askcc
+  set fast_reply
+  set include                                                           # include message when replying
+  set sig_on_top
   set ssl_starttls
   set ssl_force_tls
   set imap_keepalive            =   300
@@ -21,6 +26,12 @@ unset imap_passive
 #bind browser G check-new
 bind index gg       first-entry
 bind index G        last-entry
+bind index R        group-reply
+bind pager k        previous-line
+bind pager j        next-line
+bind pager gg       top
+bind pager G        bottom
+bind pager R        group-reply
 
 macro index,pager d "<save-message>=Trash<enter><enter><refresh>" "Trash Message"
 
@@ -30,8 +41,9 @@ hdr_order Subject Date From To Cc
 
   set edit_headers                                                      # display the headers when I'm editing a message
 unset autoedit                                                          # autoedit allow to launch directly the editor when edit_headers is also set
-  set mime_forward
-  set mime_forward_rest
+unset mime_forward
+  set forward_decode
+  set forward_quote
 
 unset help                                                              # hide help on first line of display
   set sort                      =   threads
