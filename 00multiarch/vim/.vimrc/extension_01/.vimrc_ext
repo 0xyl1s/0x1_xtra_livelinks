@@ -13,6 +13,7 @@ set smartcase                                           "override ignorecase opt
 set report=0                                            "always display report message
 set matchpairs=(:),{:},[:],<:>
 set wildmenu
+set cmdwinheight=20
 
 imap jj <esc>
 map ,_ <ESC>o_<ESC>vy78po<CR><CR><CR><CR>_<ESC>vy78po<CR><CR><ESC>5k
