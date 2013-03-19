@@ -39,8 +39,8 @@ OnTitlebar Move1  :StartMoving
 OnTitlebar Mouse3 :WindowMenu
 
 # alt-tab
-Shift Mod1 Tab :NextWindow {groups} (workspace=[current])
-Shift Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
+Control Mod1 Tab :NextWindow {groups} (workspace=[current])
+#Shift Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
 
 # cycle through tabs in the current window
 #Mod4 Tab :NextTab

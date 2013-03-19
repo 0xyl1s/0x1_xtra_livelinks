@@ -40,7 +40,7 @@ OnTitlebar Mouse3 :WindowMenu
 
 # alt-tab
 Mod1 Tab :NextWindow {groups} (workspace=[current])
-Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
+#Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
 
 # cycle through tabs in the current window
 #Mod4 Tab :NextTab
@@ -87,14 +87,14 @@ Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])
 #Mod1 F11 :Fullscreen
 
 # open the window menu
-Shift Mod1 space :WindowMenu
+Control Mod1 space :WindowMenu
 
 # exit fluxbox
 #Control Mod1 Delete :Exit
 
 # change to previous/next workspace
-Shift Control Left :PrevWorkspace
-Shift Control Right :NextWorkspace
+Control Mod1 Left :PrevWorkspace
+Control Mod1 Right :NextWorkspace
 
 # send the current window to previous/next workspace
 #Mod4 Left :SendToPrevWorkspace
