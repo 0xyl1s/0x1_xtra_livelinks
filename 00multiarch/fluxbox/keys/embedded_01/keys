@@ -12,7 +12,7 @@ OnDesktop Mouse3 :RootMenu
 #OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
 
 # alt + left/right click to move/resize a window
-OnWindow Control Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Shift Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
 OnWindow Control Shift Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
