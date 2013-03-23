@@ -105,18 +105,16 @@ Shift Control Mod1 Right :NextWorkspace
 #Shift Mod1 Right :TakeToNextWorkspace
 
 # change to a specific workspace
-#Shift Control F1 :Workspace 1
-#Shift Control F2 :Workspace 2
-#Shift Control F3 :Workspace 3
-#Shift Control F4 :Workspace 4
-#Shift Control F5 :Workspace 5
-#Shift Control F6 :Workspace 6
-#Shift Control F7 :Workspace 7
-#Shift Control F8 :Workspace 8
-#Shift Control F9 :Workspace 9
-#Shift Control F10 :Workspace 10
-#Shift Control F11 :Workspace 11
-#Shift Control F12 :Workspace 12
+Shift Control Mod1 1 :Workspace 1
+Shift Control Mod1 2 :Workspace 2
+Shift Control Mod1 3 :Workspace 3
+Shift Control Mod1 4 :Workspace 4
+Shift Control Mod1 5 :Workspace 5
+Shift Control Mod1 6 :Workspace 6
+Shift Control Mod1 7 :Workspace 7
+Shift Control Mod1 8 :Workspace 8
+Shift Control Mod1 9 :Workspace 9
+Shift Control Mod1 0 :Workspace 10
 
 # send the current window to a specific workspace
 #Mod4 F1 :SendToWorkspace 1
