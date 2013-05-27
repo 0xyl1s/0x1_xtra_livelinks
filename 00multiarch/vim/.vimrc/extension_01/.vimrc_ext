@@ -14,6 +14,7 @@ set report=0                                            "always display report m
 set matchpairs=(:),{:},[:],<:>
 set wildmenu
 set cmdwinheight=20
+set timeoutlen=300
 
 imap jj <esc>
 map ,_ <ESC>o_<ESC>vy78po<CR><CR><CR><CR>_<ESC>vy78po<CR><CR><ESC>5k
@@ -28,7 +29,13 @@ map ,co <ESC>:!gvim ~/.vimrc<CR><ESC>
 map ,cl <ESC>:let @/=''<CR>
 vmap // y/<C-R>"<CR>
 
-colorscheme morning                                     "set colorscheme
+if $TERM == 'tolerable'
+    colorscheme less
+elseif has ('gui_running')
+    colorscheme pima_1
+else
+    colorscheme desert256
+endif
 
 if has ('gui_running')
     set guioptions-=T                                   "no gvim toolbar
