@@ -16,13 +16,12 @@ set wildmenu
 set cmdwinheight=20
 set timeoutlen=300
 
-imap jj <esc>
 map ,_ <ESC>o_<ESC>vy78po<CR><CR><CR><CR>_<ESC>vy78po<CR><CR><ESC>5k
-map ,fe <ESC>:MRU<CR>
+map ,, <ESC>:MRU<CR>
 map ,ft <ESC>:NERDTreeToggle<CR>
 map ,3 <ESC>:r !x.random_string<CR>
 map ,5 <ESC>:silent !t<CR>
-map ,6 <ESC>:w<CR>:!ruby %<CR>
+map ,6 <ESC>:w<CR>:!python3 %<CR>
 map ,7 <ESC>:silent !gitk % &<CR>
 map ,bu <ESC>:buffers<CR>
 map ,co <ESC>:!gvim ~/.vimrc<CR><ESC>
